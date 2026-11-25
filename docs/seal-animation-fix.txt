@@ -1,0 +1,10 @@
+Built-in image generation tool, transparent-background edit of the existing personalized envelope.
+Use case: background-extraction. Edit target: the burgundy wax seal in the supplied embossed ivory envelope. Extract ONLY the entire complete burgundy wax seal, including its irregular wax outer rim, recessed inner circle and the exact raised gold A & H monogram. Preserve this object's shape, gold calligraphic lettering, proportions, texture, color and lighting. Output a centered, large, front-facing full wax seal on truly transparent background, with small transparent margin. No envelope, no paper, no flowers, no backdrop, no separate circular patch, no added ornament. The seal will be animated as one rigid object so the irregular outer rim and the gold lettering must remain part of the same object. Exact text A & H, same gold calligraphy as reference. Preserve existing lettering without redesign. Do not put text outside seal.
+
+Saved cutout: public/assets/images/wax-seal-ah-v2.png
+Runtime video: public/assets/media/envelope-opening-ah-v2.mp4
+Matching first-frame poster: public/assets/images/envelope-poster-ah-v2.jpg
+
+Fix: replace the entire old wax object offline, smooth the full-object pose, keep lettering/rim together, then encode H.264 yuv420p with faststart for inline playback. No per-frame DOM patch or browser tracking is needed. Preserve the reference flap movement and light outside the seal. Fade into the invitation only near the end.
+
+Garden media: convert the local garden video to a looping 18 fps animated WebP at 450 x 800. Use a native picture/source selection for reduced-motion static imagery. There are no garden video elements that could expose a Safari play overlay, and no floating music control. Background music behavior remains unchanged.

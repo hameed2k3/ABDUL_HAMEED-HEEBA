@@ -1,0 +1,161 @@
+[
+  {
+    "source_url": "https://static.tildacdn.net/tild3134-6461-4832-a236-633431616631/623915249_2629494717.png",
+    "local_path": "assets/images/075550d04c73_623915249_2629494717.webp",
+    "sha256": "cba55f2e535e512364d2e25ffde754a91c3c5f34e57e72859c31f445a7b2fb71"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild6639-3363-4136-a234-356639363561/noroot.png",
+    "local_path": "assets/images/caaf2619f515_noroot.webp",
+    "sha256": "51af7f06b4727861970c2682abbef02fb40bb0f5101b48e10af475db5d5d0318"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3764-3461-4436-a562-636534643333/noroot.png",
+    "local_path": "assets/images/12ee0cf96f43_noroot.webp",
+    "sha256": "627bfa9b106f4357056d71c262ceb2375722a27d73e0188e3f3b904a4e350fc8"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3336-3462-4961-a332-613731663665/623915249_2629494717.png",
+    "local_path": "assets/images/3fc30b4edaa9_623915249_2629494717.webp",
+    "sha256": "81f9fc9dc01daf07e67246f41a3bdbf1ead4b291d6299fab5e51cfb321c18ee7"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3438-6238-4236-b537-366632636138/noroot.png",
+    "local_path": "assets/images/2a5f0fc4b7d0_noroot.webp",
+    "sha256": "17790d1251f70780873da3787ff855f607be0c9338d0112b52fbf18b6fcde760"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild6638-6565-4665-a361-653962303137/wax_seal_1.png",
+    "local_path": "assets/images/69930afe484c_wax_seal_1.webp",
+    "sha256": "e20c1f5d1b6ee82468cb399d05fc62b7ce60e124d68d9d0d81cc57443a0ca226",
+    "optimized_sha256": "e20c1f5d1b6ee82468cb399d05fc62b7ce60e124d68d9d0d81cc57443a0ca226",
+    "lossless_conversion": true
+  },
+  {
+    "source_url": "https://pub-4dc8201144ca418fb604349c73e8c724.r2.dev/Einaudi_%20Divenire%20(1)%20(1).mp3",
+    "local_path": "assets/media/divenire.mp3",
+    "sha256": "08d268fee3d790adbe9db32e0bd115c83f321680cdc8d7b977b03ace22b13e3f"
+  },
+  {
+    "source_url": "https://assets.webgencyinvitations.com/Swans2_1_qwzsod.mov",
+    "local_path": "assets/media/swans.mp4",
+    "sha256": "b01aa593ede5913da0f3dbd0f224a52ed1ac9c0d2998d0fb6505d3030444e152"
+  },
+  {
+    "source_url": "https://assets.webgencyinvitations.com/ChatGPT_Image_Jun_23_2026_04_40_29_PM_4_piptqn%20(2).png",
+    "local_path": "assets/images/embossed-envelope-ah-v1.png",
+    "sha256": "576afc86b33610e4a33aee7944d1059ccfcfe1817279e87a2cbd9e7b402e90bb",
+    "modification": "Built-in image generation edit: R & Z monogram replaced with A & H.",
+    "notes": "docs/envelope-artwork.txt"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild6638-3365-4663-b834-363436333136/noroot.png",
+    "local_path": "assets/images/345f3528e6c8_noroot.webp",
+    "sha256": "9e2804883afdb36756f01b63132d8446857501848f83af370d159ddbfa6e484f"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3633-3739-4961-b135-306530633566/noroot.png",
+    "local_path": "assets/images/7370cf86befd_noroot.webp",
+    "sha256": "90a73269a2b6f92879d85bab28bee377389f56b149e3510545365ee72788707f"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3363-3665-4330-a361-666466346532/rose_-_Copy.png",
+    "local_path": "assets/images/bbc296d3347b_rose_-_Copy.webp",
+    "sha256": "cb5611fa758db9e9414e60215285ca3c860adf3a0ce998b87db0cffa58c267b6"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild6131-6362-4663-b461-626531656438/right-element_1.png",
+    "local_path": "assets/images/155223678525_right-element_1.webp",
+    "sha256": "beeb2885e9c496b58ef5db7bd5a0d3d684c8b407c04d4b8b744311330590fce0"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3638-3336-4136-a131-633463346265/left-element_1.png",
+    "local_path": "assets/images/5d4c62f18670_left-element_1.webp",
+    "sha256": "f56d8e21078a6cb0e7a30c218a5655a4501251e875ea3b03a2c0daf6df4e1cff"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3232-3638-4338-a134-336230313236/acomm-decor.png",
+    "local_path": "assets/images/bb55a7105f62_acomm-decor.webp",
+    "sha256": "2320edf5f0a8e08ec06a54d4ccf451ea27143eb707f38df8e53a35deaf3eb049"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3865-6365-4762-a433-393764616530/noroot.png",
+    "local_path": "assets/images/b513f82aaf93_noroot.webp",
+    "sha256": "b9d7167406c58894003ba5ab0b1547ccee6e93c801e259c406bb95b24db21294"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3061-3635-4666-b537-356639373733/noroot.png",
+    "local_path": "assets/images/6bf540d0fbe4_noroot.webp",
+    "sha256": "8fd74a27ed24120d5f5dddd05ec83e1e11af81da24ec54954a8547cef6137c00"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3164-3236-4638-a166-306230303738/noroot.png",
+    "local_path": "assets/images/4ffd7a196bd4_noroot.webp",
+    "sha256": "1acc3eadca4dfb570d0e912f51b87ea59725b55948f6d8d181ac9f7e11a7c7df"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3162-6263-4433-a230-653935613338/noroot.png",
+    "local_path": "assets/images/1dd766ceb416_noroot.webp",
+    "sha256": "b21dd543fa70455305fc28d8c722a52c16c310d9efd9309853d8b4dd938d3108"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3138-6463-4261-a461-336165643531/noroot.png",
+    "local_path": "assets/images/23c733fcbffc_noroot.webp",
+    "sha256": "65dde0f9aebe1a95d9e2201beb5a87f336e9fe8e8eca1efa297df812cad34f2e"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3034-6134-4462-b665-653163373262/noroot.png",
+    "local_path": "assets/images/51cba1ab62aa_noroot.webp",
+    "sha256": "82f0afc01f11a14a557d34cfc1519810100eac5c8dc03513106b6e7f1ce9159e"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3830-3566-4961-a334-666539356637/Rectangle_270.svg",
+    "local_path": "assets/images/ba04b3abe70f_Rectangle_270.svg",
+    "sha256": "ad082e3d64e795feb37089af71ae1f9bc63bc8e00af8025bfdbb8a6a572c0d41"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3931-3661-4661-b434-646566363730/noroot.png",
+    "local_path": "assets/images/518c94f3e199_noroot.webp",
+    "sha256": "d475e7568506ec678348e4077c77a98e69790d3607b00fe53ff8900bfd0118c2"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild6661-6464-4939-b433-346632643639/noroot.png",
+    "local_path": "assets/images/4956350a9355_noroot.webp",
+    "sha256": "b717a1dc1bf4f9778a113b85cc531703d791880e5332c4171f54955f7ed86e22"
+  },
+  {
+    "source_url": "https://static.tildacdn.net/tild3732-6364-4131-b837-353363666335/623915249_2629494717.png",
+    "local_path": "assets/images/7f5bd2ba34e8_623915249_2629494717.webp",
+    "sha256": "cc4536c6b0bb79aadbb43cfa00e1db933664c67b2d80ad7b91d79e84db131947"
+  },
+  {
+    "source_url": "https://assets.webgencyinvitations.com/1782224012851_1_m6ww6v.mp4",
+    "local_path": "assets/media/reference-opening.mp4",
+    "sha256": "fe93b14e7ca51110e6803f81c6017d1c01fab5084c3bf0e3ba75253f0513a72b"
+  },
+  {
+    "source_url": "Built-in image-generation transparent cutout; prompt in docs/seal-animation-fix.txt",
+    "local_path": "assets/images/wax-seal-ah-v2.png",
+    "sha256": "da2d87ea97894b2d22c0348a70097d9a784ad3880a8e7639dec13c08019ceb2d"
+  },
+  {
+    "source_url": "Original reference flap video with the complete A & H wax seal composited offline; docs/compose_personalized_opening.py",
+    "local_path": "assets/media/envelope-opening-ah-v2.mp4",
+    "sha256": "eb06a115dae655f2156997d82eba9b5c421641c39a67cbc077bf2c21989f6bad"
+  },
+  {
+    "source_url": "First decoded frame of envelope-opening-ah-v2.mp4, extracted after final encoding",
+    "local_path": "assets/images/envelope-poster-ah-v2.jpg",
+    "sha256": "04b015909a0edd8dbc301481ea51aa46b666728501dd8c3d2ea76a8aa821d084"
+  },
+  {
+    "source_url": "Local reference swans/garden footage converted to a looping animated WebP at 18 fps, 450 x 800",
+    "local_path": "assets/images/garden-motion-v2.webp",
+    "sha256": "843d42cf39e19d1c40f0ff33059e25596d970ac882c317268198f19a30296e39"
+  },
+  {
+    "source_url": "First frame of local reference swans/garden footage, used for reduced motion",
+    "local_path": "assets/images/garden-still-v2.jpg",
+    "sha256": "a362120741f20e8a4632b29cb20bb9c9cd53c9e0f4b6244cae036ea2833e3cff"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "github_repository": "https://github.com/hameed2k3/ABDUL_HAMEED-HEEBA",
+  "production_branch": "main",
+  "application_root": ".",
+  "vercel_project_name": "abdul-hameed-heeba",
+  "framework": "nextjs",
+  "node_version": "24.x",
+  "install_command": "npm ci",
+  "build_command": "npm run build",
+  "required_environment_variables": [],
+  "production_url": null,
+  "vercel_deployment": "Awaiting Vercel account sign-in"
+}

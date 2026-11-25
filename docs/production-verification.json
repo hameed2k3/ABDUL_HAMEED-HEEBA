@@ -1,0 +1,98 @@
+{
+  "production_build": "passed",
+  "typescript": "passed_in_next_build",
+  "unit_tests_passed": 9,
+  "network_url": "http://192.168.1.30:3000",
+  "network_http_status": 200,
+  "reference_sections_restored": 6,
+  "scene_visual_layers": 59,
+  "timeline_events": 3,
+  "full_original_timeline_height_px": 570,
+  "personalized_card_details_verified": true,
+  "human_photo_url_returns_404": true,
+  "rsvp": "omitted_by_user; POST_endpoint_returns_404",
+  "dress_code_and_gifts": "omitted_by_user",
+  "map_tabs_verified": {
+    "nikah": "https://maps.app.goo.gl/Mk8seWyREf6UM9Pz5",
+    "walima": "https://maps.app.goo.gl/oMeu7teEoNNC65MV6",
+    "reception": "https://maps.app.goo.gl/ZVoiusj1sgxoyBT29"
+  },
+  "reference_envelope": {
+    "initials": "A & H",
+    "opening_duration_seconds": 4.8,
+    "frames": 144,
+    "rendering": "complete wax seal composited into one MP4 offline",
+    "runtime_seal_patches": 0,
+    "poster_first_frame_mean_absolute_error": 0.72,
+    "base_poster_matches_video_frame": true
+  },
+  "visual_checks": [
+    "375 x 812 phone envelope, opening, hero, countdown, full timeline, location, map switching and closing",
+    "1280 x 720 desktop composition"
+  ],
+  "browser_console_errors": 0,
+  "missing_assets": [],
+  "known_scope_differences": [
+    "Human photo replaced with garden/swans",
+    "Unrelated venue illustration replaced with venue cards",
+    "Guest information and RSVP intentionally omitted"
+  ],
+  "vercel_deployment": "not_deployed",
+  "media_buttons_removed": {
+    "floating_music_control": true,
+    "garden_native_video_overlay": true,
+    "garden_video_elements": 0,
+    "garden_animation_frames": 145,
+    "garden_animation_loop": "infinite",
+    "reduced_motion": "static picture/source",
+    "background_music": "retained, starts on opening"
+  },
+  "latest_visual_checks": "393 x 852 three-event timeline and arched cards, correct links/pins for all three map tabs, reception card navigation, 1280 x 720 cards fit without overlaps, and social-preview image containing all three event times",
+  "scratch_date_reveal": {
+    "date": "Sunday, 03 January 2027",
+    "initials": "A & H",
+    "location": "inside invitation home hero #rec4227041103",
+    "scratch_on_cover": false,
+    "cover_tap_starts_original_animation": true,
+    "threshold_of_painted_wax": 0.48,
+    "partial_scratch_verified": 0.27,
+    "full_reveal_verified": true,
+    "phase_after_scratch": "open",
+    "keyboard_cover_open_verified": true,
+    "keyboard_date_reveal_verified": true,
+    "focus_kept_on_date_control": true,
+    "phone_viewport": "393 x 852",
+    "desktop_viewport": "1280 x 720",
+    "home_artboard_height_px": 1327,
+    "no_browser_errors": true
+  },
+  "reception_update": {
+    "date": "Sunday, 03 January 2027",
+    "event": "Reception",
+    "time": "9:00 AM",
+    "venue": "Groom’s House",
+    "town": "Adirampattinam",
+    "map_url": "https://maps.app.goo.gl/ZVoiusj1sgxoyBT29",
+    "coordinates": "10.343721,79.379002",
+    "venue_name_source": "User reply: groom house",
+    "pin_source": "Resolved user-provided Google Maps short link to a coordinate search",
+    "display_order": [
+      "Reception — 9:00 AM",
+      "Nikah — 10:00 AM",
+      "Walima — 1:00 PM"
+    ],
+    "updated_surfaces": [
+      "Schedule timeline",
+      "Arched location cards",
+      "Location section heading",
+      "Framed interactive map tabs",
+      "Reception navigation link",
+      "Page description",
+      "Social-sharing preview"
+    ]
+  },
+  "location_artboard_height_px": {
+    "desktop": 650,
+    "mobile": 628
+  }
+}

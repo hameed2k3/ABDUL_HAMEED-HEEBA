@@ -1,0 +1,13 @@
+Scratch-to-reveal date inside the invitation home section
+
+Flow: embossed A & H envelope -> Tap to open -> existing 4.8-second envelope animation -> invitation home section -> scratch A & H to reveal Sunday, 03 January 2027.
+
+The opening cover is the original matching video poster with the Tap to open cue. It contains no scratch canvas or reveal requirement. Its native button immediately starts the existing animation and background music, or skips the video for reduced-motion preferences.
+
+The scratch seal is now in the home hero (#rec4227041103), replacing the plain date below Nikah Ceremony and above the couple's names. Scratch with a finger or mouse. After 48% of the painted wax is erased, the remainder fades to show the date. Transparent margins do not count toward completion. The seal is a keyboard-accessible button: Enter or Space reveals the date, with focus kept on that control. Its accessible label and live caption then announce the full date.
+
+The names, scroll cue, calligraphy and welcome copy are spaced to accommodate the new home interaction. The home artboard is 1327 pixels tall, an 87-pixel extension, preserving the full decorative composition. The timeline, countdown, framed map and closing retain their earlier heights. The location section was later extended to accommodate the third venue card. Garden media remains an animated image without native media controls, and the floating music button remains removed.
+
+Checked on a 393 x 852 mobile viewport: original Tap to open, full opening, scratch location inside home, first swipe 27%, second swipe full reveal, no overlap with names or swans. Checked at 1280 x 720: keyboard Enter opening and keyboard date reveal. No browser errors. Production build and all nine tests pass.
+
+Source: src/components/PersonalDetails.tsx (cover), src/components/ScratchDateReveal.tsx (home interaction), and src/lib/scratch.ts (coverage measurement). Date content is read from src/config/invitation.ts with Asia/Kolkata formatting.

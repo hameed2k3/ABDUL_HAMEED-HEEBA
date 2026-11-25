@@ -1,0 +1,25 @@
+{
+  "date": "Sunday, 03 January 2027",
+  "event": "Reception",
+  "time": "9:00 AM",
+  "venue": "Groom’s House",
+  "town": "Adirampattinam",
+  "map_url": "https://maps.app.goo.gl/ZVoiusj1sgxoyBT29",
+  "coordinates": "10.343721,79.379002",
+  "venue_name_source": "User reply: groom house",
+  "pin_source": "Resolved user-provided Google Maps short link to a coordinate search",
+  "display_order": [
+    "Reception — 9:00 AM",
+    "Nikah — 10:00 AM",
+    "Walima — 1:00 PM"
+  ],
+  "updated_surfaces": [
+    "Schedule timeline",
+    "Arched location cards",
+    "Location section heading",
+    "Framed interactive map tabs",
+    "Reception navigation link",
+    "Page description",
+    "Social-sharing preview"
+  ]
+}

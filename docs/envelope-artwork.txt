@@ -1,0 +1,13 @@
+REFERENCE ENVELOPE UPDATE
+
+Method: built-in image_gen image editing tool.
+Saved website asset: public/assets/images/embossed-envelope-ah-v1.png
+Dimensions: 941 x 1672 pixels.
+Input: the original downloaded embossed ivory envelope artwork from the reference website.
+Change requested by the user: gold initials A & H.
+
+Final prompt:
+Use case: text-localization / precise-object-edit. Edit target: the supplied original portrait ivory embossed wedding envelope artwork. Make exactly ONE localized change: replace the gold calligraphic monogram 'R & Z' inside the burgundy wax seal with the exact text 'A & H' (A, ampersand, H). Match the same elegant intertwined calligraphic letter style, gold metallic color, embossed/beveled depth, scale, and centered placement inside the existing seal. Do not add names, dates, labels, or any other text. Preserve the original paper, detailed embossed white floral vines, envelope folds, all lighting and shadows, ivory tone, seal shape, seal position and size, seal texture and rim, camera framing, and full portrait aspect ratio. Keep everything outside the lettering unchanged with maximum fidelity. No people. No redesign. Do not crop or add a border. The output is a finished website envelope asset, not a mockup.
+
+Website presentation:
+The crop uses a centered cover image in a portrait frame up to 550 x 875 CSS pixels, with narrow cream outer margins. The tap cue is rendered as accessible website UI over the image. Screen proportions can change the crop on other devices. The edited artwork visually follows the reference; a pixel-identical claim is not made for an AI-edited image.

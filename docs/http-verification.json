@@ -1,0 +1,12 @@
+{
+  "production_build": "passed",
+  "typescript": "passed_in_next_build",
+  "unit_tests_passed": 7,
+  "network_url": "http://192.168.1.30:3000",
+  "personalized_card_details_verified": true,
+  "human_photo_url_returns_404": true,
+  "old_venue_and_opening_video_urls_return_404": true,
+  "retained_static_images": "florals, decorative paper, Arabic calligraphy and RSVP seal only",
+  "missing_assets": [],
+  "rsvp_delivery": "still requires a configured destination"
+}

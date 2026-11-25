@@ -1,0 +1,26 @@
+{
+  "source": "User-supplied invitation card",
+  "groom": {
+    "name": "Abdul Hameed",
+    "qualification": "B.Tech"
+  },
+  "bride": {
+    "name": "Heeba",
+    "qualification": "M.Com"
+  },
+  "date": "2027-01-03",
+  "weekday": "Sunday",
+  "time_zone": "Asia/Kolkata",
+  "nikah": {
+    "time": "10:00 AM",
+    "venue": "Beach Street Masjid",
+    "town": "Adirampattinam"
+  },
+  "walima": {
+    "time": "1:00 PM",
+    "venue": "Beach Street Madrasah",
+    "town": "Adirampattinam"
+  },
+  "family_message": "Groom’s Family | Bride’s Family",
+  "image_preference": "No human images. Keep decorative flowers and garden artwork. Remove unrelated sample imagery."
+}
