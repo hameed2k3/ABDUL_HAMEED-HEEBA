@@ -8,6 +8,10 @@
   "install_command": "npm ci",
   "build_command": "npm run build",
   "required_environment_variables": [],
-  "production_url": null,
-  "vercel_deployment": "Awaiting Vercel account sign-in"
+  "production_url": "https://abdul-hameed-heeba.vercel.app",
+  "vercel_deployment": "READY",
+  "git_integration": "connected",
+  "github_ci": "passed on Linux",
+  "github_ci_url": "https://github.com/hameed2k3/ABDUL_HAMEED-HEEBA/actions/runs/45599475315",
+  "guest_access_http_status": 200
 }

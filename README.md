@@ -4,6 +4,10 @@
 
 Abdul Hameed & Heeba’s personalized wedding invitation.
 
+**Live invitation:** [abdul-hameed-heeba.vercel.app](https://abdul-hameed-heeba.vercel.app)
+
+Connected to Vercel with `main` as the production branch. Pushes to `main` deploy automatically.
+
 Next.js 16.4.6, React 19 and TypeScript implementation of the supplied Sacred Garden reference. The original decorative artwork, local fonts, animation keyframes, paper textures and portrait composition are retained. The site renders through React without Tilda runtime or tracking scripts.
 
 ## Run locally
