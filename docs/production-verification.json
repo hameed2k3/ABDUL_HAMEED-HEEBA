@@ -37,7 +37,7 @@
     "Unrelated venue illustration replaced with venue cards",
     "Guest information and RSVP intentionally omitted"
   ],
-  "vercel_deployment": "not_deployed",
+  "vercel_deployment": "READY",
   "media_buttons_removed": {
     "floating_music_control": true,
     "garden_native_video_overlay": true,
@@ -94,5 +94,13 @@
   "location_artboard_height_px": {
     "desktop": 650,
     "mobile": 628
-  }
+  },
+  "production_url": "https://abdul-hameed-heeba.vercel.app",
+  "production_guest_access_http_status": 200,
+  "production_assets_checked": 43,
+  "production_asset_failures": [],
+  "github_repository": "https://github.com/hameed2k3/ABDUL_HAMEED-HEEBA",
+  "github_production_branch": "main",
+  "github_auto_deployment": "connected and confirmed by production build for push 5001756",
+  "github_linux_ci": "passed"
 }
