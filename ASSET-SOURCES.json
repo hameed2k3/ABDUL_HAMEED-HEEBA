@@ -169,5 +169,15 @@
     "local_path": "assets/images/burgundy-floral-theme-v1.webp",
     "sha256": "87def1ba98fdd9ffbc998d643200a903b2cd178ad985b42272475f9c34741f79",
     "original_artwork": "docs/artwork/burgundy-floral-theme-v1.png"
+  },
+  {
+    "source_url": "Earlier A & H opening animation retextured with the user-supplied burgundy floral paper; docs/compose_burgundy_opening.py",
+    "local_path": "assets/media/envelope-opening-burgundy-v3.mp4",
+    "sha256": "c3ea3e8970be7233a750bef641191a1553e242343684897151e811082125fcdd"
+  },
+  {
+    "source_url": "First decoded frame of envelope-opening-burgundy-v3.mp4; matched cover for continuous playback",
+    "local_path": "assets/images/envelope-poster-burgundy-v3.jpg",
+    "sha256": "f665267a2a4928d5cdc1c8c256836227a326d4bad696f769e28eb608c1fdb45b"
   }
 ]

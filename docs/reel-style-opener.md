@@ -1,5 +1,7 @@
 # Native envelope opener and burgundy theme
 
+Historical iteration: superseded at the user’s request by the earlier video motion with the new paper. See `classic-opening-new-background.md` for the current implementation.
+
 Feature branch: `feat/reel-style-opener`. Prepared 26 November 2026 for preview review; production remains on `main`.
 
 The reference reel's on-screen sequence is recreated with local artwork. Hands, phone footage, sample couple details and branding are excluded. The user's subsequent theme direction applies their ivory embossing and burgundy flowers throughout the cover, headings, countdown, event cards, map controls and closing text. Gold remains a restrained accent in the original A & H wax artwork and retained garden ornaments.

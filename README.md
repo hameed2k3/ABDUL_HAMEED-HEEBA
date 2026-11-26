@@ -49,9 +49,9 @@ Dress code, gift information and RSVP were omitted at the user's request. The RS
 
 Six sections retain the spacious reference composition: invitation (1327px, extended from 1240px to fit the scratch date), countdown (257px / 247px on phones), timeline (570px), location (650px / 628px on phones, extended for three arched venue cards), framed map (343px) and closing (673px). The original guest-information and RSVP sections are intentionally omitted.
 
-- Ivory embossed envelope with the supplied burgundy floral artwork, complete A & H seal and accessible Tap to open button. One tap starts native 3D flap motion and the existing music.
+- Ivory embossed envelope with the supplied burgundy floral artwork, complete A & H seal and accessible Tap to open button. One tap starts the earlier opening animation, now rendered with the new floral paper, and the existing music.
 - Inside the invitation home section, below Nikah Ceremony and above the names, scratch the A & H seal to reveal Sunday, 3 January 2027. Keyboard users can focus the same seal and press Enter or Space. No scratching is required on the opening envelope.
-- A 4.8-second native Web Animations API opener folds the flap and attached seal upward, then reveals warm light, sparkles and the home screen. One shared clock drives the scene. Reduced motion, unloaded/failed artwork or unavailable animation support use a short fade; a 6.5-second watchdog prevents a stuck cover. No opening video is mounted or requested.
+- The earlier 4.8-second opening motion is restored using a new finished video with the supplied burgundy floral paper throughout. Its original complete A & H seal, movement and warm light are retained. A first-frame poster matches the video. The video stays hidden until playback starts and has no visible controls. Reduced motion, failed media or interrupted playback use a short fade; a 6.5-second watchdog prevents a stuck cover.
 - Garden/swans motion rendered as an animated WebP, so iOS cannot show a native video play icon over it. The floating music play/pause button is removed as requested; background music still starts on opening. A static garden image is selected for reduced-motion preferences.
 - Original scroll reveals, floating florals, petals, parchment edges, ornaments and moving timeline rose.
 - Animated countdown digits, original ornate map frame and venue-selection tabs.
@@ -59,7 +59,7 @@ Six sections retain the spacious reference composition: invitation (1327px, exte
 
 No human photograph or unrelated New York venue illustration is served. Three arched venue cards fill the extended former illustration area, with Reception centered above the Nikah and Walima cards. The original reference is adapted to the user's content and exclusions; personalized text and artwork are not a literal pixel-for-pixel copy.
 
-`src/data/scenes.json` contains positioned layers and animation keyframes. `src/app/reference.css` retains responsive source layout rules; `src/app/globals.css` supplies personalized text fitting and React component styling. `src/components/EnvelopeIntro.tsx` and `src/app/envelope.css` implement the layered opener; `src/app/theme.css` applies the ivory and burgundy palette. The existing seal PNG is reused unchanged. `docs/reel-style-opener.md` documents the current artwork and verification. Earlier offline video-compositing files remain as history; raw reference footage remains in the separate original-site archive. `ASSET-SOURCES.json` records retained source URLs and checksums. The A & H artwork edit prompts are saved in `docs/envelope-artwork.txt` and `docs/seal-animation-fix.txt`.
+`src/data/scenes.json` contains positioned layers and animation keyframes. `src/app/reference.css` retains responsive source layout rules; `src/app/globals.css` supplies personalized text fitting and React component styling. `src/components/EnvelopeIntro.tsx` and `src/app/envelope.css` implement the video opener; `src/app/theme.css` applies the ivory and burgundy palette. The existing seal PNG is reused unchanged. `docs/classic-opening-new-background.md` documents the restored animation and verification. `docs/reel-style-opener.md` records the superseded native-fold iteration and paper generation prompt. Earlier offline video-compositing files remain as history; raw reference footage remains in the separate original-site archive. `ASSET-SOURCES.json` records retained source URLs and checksums. The A & H artwork edit prompts are saved in `docs/envelope-artwork.txt` and `docs/seal-animation-fix.txt`.
 
 ## Verify
 
@@ -69,7 +69,7 @@ npm test
 npm run build
 ```
 
-See `docs/reel-style-opener.md` for feature-preview checks; `docs/production-verification.json` records the earlier production release. Phone checks used 375 × 812 and 393 × 852 viewports. Checks covered the restored tap-to-open flow, scratch reveal inside home and keyboard access. The latest update verified all three event times, the reception pin, switching all three map tabs, reception-card navigation, the social preview, and mobile/desktop card spacing. Both media buttons remain absent. Desktop composition was also inspected previously.
+See `docs/classic-opening-new-background.md` for current feature-preview checks; `docs/production-verification.json` records the earlier production release. Phone checks used 375 × 812 and 393 × 852 viewports. Checks covered the restored tap-to-open flow, scratch reveal inside home and keyboard access. The latest update verified all three event times, the reception pin, switching all three map tabs, reception-card navigation, the social preview, and mobile/desktop card spacing. Both media buttons remain absent. Desktop composition was also inspected previously.
 
 ## GitHub and Vercel production
 
