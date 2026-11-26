@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-26",
+  "branch": "feat/reel-style-opener",
+  "codeCommit": "d09428741d07f0638fbc843311af4e0be4f94737",
+  "previewUrl": "https://abdul-hameed-heeba-qaajouzy4-adhameed2k3-8212s-projects.vercel.app",
+  "deploymentId": "dpl_HuZiHv8PUYUcwkALumPr63dbGXcN",
+  "deploymentState": "READY",
+  "target": "preview",
+  "deploymentDashboard": "https://vercel.com/adhameed2k3-8212s-projects/abdul-hameed-heeba/HuZiHv8PUYUcwkALumPr63dbGXcN",
+  "previewAccess": "Existing Vercel authentication protection. Browser redirects to Vercel login; protection unchanged.",
+  "productionUrl": "https://abdul-hameed-heeba.vercel.app",
+  "productionCommit": "76d84ec62b5c6b7aad4783782ba783e7ec6231a9",
+  "productionChanged": false,
+  "checks": {
+    "typecheck": "passed",
+    "existingTests": {
+      "passed": 9,
+      "failed": 0
+    },
+    "productionBuild": "passed",
+    "vercelBuild": "passed",
+    "diffCheck": "passed",
+    "browserEngine": "available Chromium browser on Windows",
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 320,
+        "height": 568
+      },
+      {
+        "width": 844,
+        "height": 390
+      },
+      {
+        "width": 1440,
+        "height": 900
+      }
+    ],
+    "keyboard": [
+      "Enter opens",
+      "Space opens",
+      "scratch reveal by Enter and Space"
+    ],
+    "mouse": "double-click ignored after first activation",
+    "visualStages": [
+      "closed",
+      "front-face fold with attached seal",
+      "back face",
+      "open flap",
+      "light and sparkles",
+      "crossfade",
+      "home"
+    ],
+    "fallbacks": [
+      "reduced-motion component input",
+      "missing paper source",
+      "cancelled animation watchdog"
+    ],
+    "videoElementCount": 0,
+    "scrollYAfterOpening": 0,
+    "mainWidthBeforeAndAfterUnlockAt390px": 360,
+    "dataPreserved": [
+      "Reception 9:00 AM at Groom’s House",
+      "Nikah 10:00 AM",
+      "Walima 1:00 PM",
+      "all three supplied map URLs and pins",
+      "home scratch date",
+      "music on gesture"
+    ],
+    "deviceChecksPending": [
+      "real iPhone Safari",
+      "real Android Chrome"
+    ]
+  },
+  "proofDirectory": "../reel-opener-review",
+  "notes": "Preview only; no production merge or --prod deployment performed."
+}
