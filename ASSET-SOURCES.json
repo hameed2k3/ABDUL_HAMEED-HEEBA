@@ -189,5 +189,15 @@
     "source_url": "Lossless RGB WebP from the first encoded Remotion v4 video frame; tools/envelope-animation/render.mjs",
     "local_path": "assets/images/envelope-poster-remotion-v4.webp",
     "sha256": "d49e631f3b1f8b626fea4e48c494213d551a50849eeae419156a0160ed2c9fbf"
+  },
+  {
+    "source_url": "Remotion 4.0.547 layered composition, duration revision v5; 1080x1920 60fps 258 frames / 4.3s, H.264 CRF20 BT.709 faststart, no audio.",
+    "local_path": "assets/media/envelope-opening-remotion-v5.mp4",
+    "sha256": "2802b2adf9d6ea3dc9f85fbcdf570108c9a65175b7d71949ef8bca458d2bfc48"
+  },
+  {
+    "source_url": "Lossless RGB WebP from the first encoded 4.3-second Remotion v5 frame; tools/envelope-animation/render.mjs",
+    "local_path": "assets/images/envelope-poster-remotion-v5.webp",
+    "sha256": "4d645962abeb556f9e4f3fd0ce3e5b037305112370f30ef9335ff4bd3bd94154"
   }
 ]

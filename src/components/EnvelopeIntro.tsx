@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 
 export type InvitationPhase = "closed" | "opening" | "revealing" | "open";
 
-const MOVIE = "/assets/media/envelope-opening-remotion-v4.mp4";
-const POSTER = "/assets/images/envelope-poster-remotion-v4.webp";
+const MOVIE = "/assets/media/envelope-opening-remotion-v5.mp4";
+const POSTER = "/assets/images/envelope-poster-remotion-v5.webp";
 
 type Props = {
   phase: InvitationPhase;
@@ -61,7 +61,7 @@ export function EnvelopeIntro({ phase, reducedMotion, onStart, onRevealing, onCo
     } else {
       const update = () => {
         if (!live) return;
-        const duration = Number.isFinite(movie.duration) ? movie.duration : 4.8;
+        const duration = Number.isFinite(movie.duration) ? movie.duration : 4.3;
         const remaining = duration - movie.currentTime;
         if (remaining <= .8) {
           reveal();

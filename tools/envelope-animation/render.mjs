@@ -8,9 +8,9 @@ import { browserOptions } from "./browser.ts";
 
 const directory = path.dirname(fileURLToPath(import.meta.url));
 const project = path.resolve(directory, "../..");
-const proof = path.resolve(project, "../remotion-opener-review");
-const movie = path.join(project, "public/assets/media/envelope-opening-remotion-v4.mp4");
-const poster = path.join(project, "public/assets/images/envelope-poster-remotion-v4.webp");
+const proof = path.resolve(project, "../remotion-opener-review-v5");
+const movie = path.join(project, "public/assets/media/envelope-opening-remotion-v5.mp4");
+const poster = path.join(project, "public/assets/images/envelope-poster-remotion-v5.webp");
 const stillsOnly = process.argv.includes("--stills");
 const browser = browserOptions();
 await mkdir(proof, { recursive: true });
@@ -18,8 +18,8 @@ await mkdir(proof, { recursive: true });
 const serveUrl = await bundle({ entryPoint: path.join(directory, "src/index.ts"),
   publicDir: path.join(project, "public"), outDir: path.join(directory, ".cache/bundle") });
 const composition = await selectComposition({ serveUrl, id: "AHEnvelopeOpening", ...browser });
-const checkpoints = [[0, "01-closed"], [48, "02-early-lift"], [108, "03-halfway"],
-  [204, "04-raised"], [240, "05-illuminated"], [287, "06-final-reveal"]];
+const checkpoints = [[0, "01-closed"], [48, "02-early-lift"], [93, "03-halfway"],
+  [180, "04-raised"], [210, "05-illuminated"], [257, "06-final-reveal"]];
 
 for (const [frame, label] of checkpoints) {
   await renderStill({ composition, serveUrl, frame, imageFormat: "png", output: path.join(proof, `${label}.png`), ...browser });

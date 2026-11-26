@@ -19,8 +19,8 @@ export function EnvelopeOpening() {
   const frame = useCurrentFrame();
   const { fps, width } = useVideoConfig();
   const time = frame / fps;
-  const lift = interpolate(time, [.2, 3.4], [0, 1], { ...clamp, easing: Easing.bezier(.6, 0, .35, 1) });
-  const light = interpolate(time, [2.6, 4], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
+  const lift = interpolate(time, [.2, 3], [0, 1], { ...clamp, easing: Easing.bezier(.6, 0, .35, 1) });
+  const light = interpolate(time, [2.3, 3.5], [0, 1], { ...clamp, easing: Easing.inOut(Easing.cubic) });
   const tip = interpolate(lift, [0, 1], [653, 308]);
   const tipPercent = tip / 1280 * 100;
   const flap = `polygon(0 0,100% 0,50% ${tipPercent}%)`;
