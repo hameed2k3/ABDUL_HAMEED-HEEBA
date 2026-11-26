@@ -1,0 +1,26 @@
+/* The supplied ivory embossing and burgundy flowers establish the whole palette. */
+.invitation-content { background: var(--ivory); }
+.invitation-content:focus { outline: none; }
+.invitation-content .t396__artboard { background-color: var(--ivory); }
+.invitation-content .t396__filter { background-image: none; }
+.invitation-content [data-elem-type="text"] .tn-atom,
+.invitation-content [data-elem-type="event-label"] .tn-atom { color: var(--burgundy) !important; }
+.invitation-content [data-elem-type="event-time"] .tn-atom { color: var(--ink) !important; }
+.couple-person small { color: var(--ink); }
+.reference-venue-card { border-color: #b58189; background: #fffaf2dc; color: var(--ink); box-shadow: 0 3px 14px #6b10250b; }
+.reference-venue-card:hover { background: #fffaf2; border-color: var(--burgundy); }
+.venue-card-event, .venue-card-ornament { color: var(--burgundy); }
+.reference-map-panel { background: var(--ivory); box-shadow: 0 0 0 1px #ad747d; }
+.reference-map-tabs { background: #eee0d5; }
+.reference-map-tabs button { color: var(--burgundy); border-color: #b58189; }
+.reference-map-tabs button[aria-pressed="true"] { color: #fff7e9; background: var(--burgundy); }
+.reference-map-open { color: var(--burgundy); border-color: #b58189; background: #fffaf2f5; }
+.scratch-date-medallion { color: var(--burgundy); border-color: #b58189; background: radial-gradient(circle at 35% 25%,#fffaf1,#eee0d2 80%); box-shadow: inset 0 0 0 3px #fff8ea,inset 0 0 0 4px #b58189,0 3px 10px #6b102514; }
+.scratch-date-year, .home-scratch-caption { color: var(--burgundy); }
+.countdown, .countdown-separator { color: var(--burgundy); }
+.countdown-number { background-image: linear-gradient(105deg,#6b1025 25%,#9b3d50 46%,#b96772 52%,#9b3d50 58%,#6b1025 75%); }
+/* The detailed embossing stays behind a quiet paper wash so small copy stays clear. */
+#rec2487446093 .t396__artboard,
+#rec2487446103 .t396__artboard,
+#rec2487446153 .t396__artboard { background-image: linear-gradient(#f5edddb8,#f5edddd9),url('/assets/images/burgundy-floral-theme-v1.webp'); background-position: center; background-size: cover; }
+.reference-family-caption { color: var(--ink); }

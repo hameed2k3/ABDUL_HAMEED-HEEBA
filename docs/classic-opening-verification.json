@@ -1,0 +1,74 @@
+{
+  "source": {
+    "frames": 144,
+    "fps": 30.0
+  },
+  "new": {
+    "frames": 144,
+    "fps": 30.0
+  },
+  "waxMeanAbsoluteDifference": [
+    {
+      "frame": 0,
+      "differenceOn255Scale": 2.008
+    },
+    {
+      "frame": 30,
+      "differenceOn255Scale": 2.253
+    },
+    {
+      "frame": 60,
+      "differenceOn255Scale": 2.278
+    },
+    {
+      "frame": 90,
+      "differenceOn255Scale": 2.775
+    },
+    {
+      "frame": 120,
+      "differenceOn255Scale": 2.552
+    },
+    {
+      "frame": 143,
+      "differenceOn255Scale": 2.874
+    }
+  ],
+  "date": "2026-11-26",
+  "motion": "Earlier A & H opening video with supplied floral paper",
+  "runtimeVideo": "/assets/media/envelope-opening-burgundy-v3.mp4",
+  "poster": "/assets/images/envelope-poster-burgundy-v3.jpg",
+  "checks": {
+    "typecheck": "pass",
+    "existingTests": 9,
+    "productionBuild": "pass",
+    "browser": "available Chromium on Windows",
+    "viewports": [
+      [
+        390,
+        844
+      ],
+      [
+        320,
+        568
+      ],
+      [
+        844,
+        390
+      ]
+    ],
+    "mouse": "pass",
+    "Enter": "pass",
+    "Space": "pass",
+    "mediaControlsVisible": false,
+    "scrollYAfterOpen": 0,
+    "consoleErrors": 0,
+    "reducedMotion": "pass via component preference input",
+    "missingVideo": "pass",
+    "interruptedPlayback": "pass",
+    "realDeviceReview": [
+      "iPhone Safari",
+      "Android Chrome"
+    ]
+  },
+  "release": "Feature preview only. Production remains on main."
+}

@@ -1,0 +1,95 @@
+{
+  "remotion": "4.0.547",
+  "composition": "AHEnvelopeOpening",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "durationInFrames": 288,
+  "durationSeconds": 4.8,
+  "codec": "h264",
+  "pixelFormat": "yuv420p",
+  "crf": 20,
+  "audio": false,
+  "faststart": true,
+  "movie": "public/assets/media/envelope-opening-remotion-v4.mp4",
+  "movieBytes": 1399130,
+  "poster": "public/assets/images/envelope-poster-remotion-v4.webp",
+  "checkpoints": [
+    {
+      "frame": 0,
+      "label": "01-closed"
+    },
+    {
+      "frame": 48,
+      "label": "02-early-lift"
+    },
+    {
+      "frame": 108,
+      "label": "03-halfway"
+    },
+    {
+      "frame": 204,
+      "label": "04-raised"
+    },
+    {
+      "frame": 240,
+      "label": "05-illuminated"
+    },
+    {
+      "frame": 287,
+      "label": "06-final-reveal"
+    }
+  ],
+  "date": "2026-11-26",
+  "colorSpace": "bt709",
+  "posterRgbMaxDifference": 0,
+  "posterBytes": 1120876,
+  "sourceSealSha256": "da2d87ea97894b2d22c0348a70097d9a784ad3880a8e7639dec13c08019ceb2d",
+  "browser": {
+    "engine": "Available Chromium on Windows",
+    "viewports": [
+      [
+        390,
+        844
+      ],
+      [
+        320,
+        568
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        1440,
+        900
+      ]
+    ],
+    "coverAndPlayingRectanglesEqual": true,
+    "mediaControlsVisible": false,
+    "Enter": "pass",
+    "Space": "pass",
+    "doubleClick": "pass",
+    "revealingMainInert": true,
+    "openMainInert": false,
+    "scrollYAfterOpen": 0,
+    "normalConsoleErrors": 0,
+    "scratchKeyboardDate": "Sunday, 03 January 2027",
+    "reducedMotionInput": "pass",
+    "missingVideo": "pass",
+    "interruptedPlayback": "pass",
+    "stalledPlayPromiseParentWatchdog": "pass",
+    "realDeviceReviewPending": [
+      "iPhone Safari",
+      "Android Chrome"
+    ]
+  },
+  "checks": {
+    "authoringTypecheck": "pass",
+    "applicationTypecheck": "pass",
+    "existingTests": 9,
+    "productionBuild": "pass"
+  },
+  "authoringExcludedFromNextAndVercel": true,
+  "previewOnly": true
+}

@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { invitation } from "@/config/invitation";
 import "./reference.css";
 import "./globals.css";
+import "./envelope.css";
+import "./theme.css";
 
 const referenceFont = localFont({
   src: [
@@ -47,7 +49,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#f9f0e0",
+  themeColor: "#f5eddd",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

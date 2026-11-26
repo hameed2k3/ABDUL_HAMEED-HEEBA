@@ -1,16 +1,15 @@
 "use client";
 
-import { useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
+import { useCallback, useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { invitation } from "@/config/invitation";
 import sceneData from "@/data/scenes.json";
 import media from "@/data/media.json";
 import { Countdown } from "./Countdown";
-import { PersonalEnvelope } from "./PersonalDetails";
+import { EnvelopeIntro, type InvitationPhase } from "./EnvelopeIntro";
 import { ScratchDateReveal } from "./ScratchDateReveal";
-import { ReferenceOpening, ReferenceVenueMap, VenueDirectory } from "./ReferenceDetails";
+import { ReferenceVenueMap, VenueDirectory } from "./ReferenceDetails";
 
 type Element = (typeof sceneData)[number]["elements"][number];
-type Phase = "closed" | "opening" | "open";
 
 function useSceneMotion(element: Element, active: boolean, reducedMotion: boolean) {
   const ref = useRef<HTMLDivElement>(null);
@@ -142,13 +141,20 @@ function SceneElement({ element, scene, reducedMotion, active, selectedVenue, on
 }
 
 export function Invitation() {
-  const [phase, setPhase] = useState<Phase>("closed");
+  const [phase, setPhase] = useState<InvitationPhase>("closed");
   const [reducedMotion, setReducedMotion] = useState(false);
   const [selectedVenue, setSelectedVenue] = useState(0);
   const audio = useRef<HTMLAudioElement>(null);
-  const openingVideo = useRef<HTMLVideoElement>(null);
   const main = useRef<HTMLElement>(null);
   const entered = useRef(false);
+  const entranceStarted = phase === "revealing" || phase === "open";
+  const openingActive = phase === "opening" || phase === "revealing";
+  const beginReveal = useCallback(() => setPhase((current) => current === "opening" ? "revealing" : current), []);
+  const finishOpening = useCallback(() => {
+    setPhase("open");
+    // A keyboard guest can continue into the invitation after the button leaves.
+    requestAnimationFrame(() => main.current?.focus({ preventScroll: true }));
+  }, []);
 
   useEffect(() => {
     const query = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -166,7 +172,15 @@ export function Invitation() {
   }, [phase]);
 
   useEffect(() => {
-    if (phase !== "open") return;
+    if (phase === "open") return;
+    const previous = history.scrollRestoration;
+    history.scrollRestoration = "manual";
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    return () => { history.scrollRestoration = previous; };
+  }, [phase === "open"]);
+
+  useEffect(() => {
+    if (!entranceStarted) return;
     const elements = main.current?.querySelectorAll<HTMLElement>(".reveal");
     if (!elements) return;
     const observer = new IntersectionObserver((entries) => {
@@ -179,44 +193,37 @@ export function Invitation() {
     }, { threshold: 0.08, rootMargin: "0px 0px 40px 0px" });
     elements.forEach((element) => observer.observe(element));
     return () => observer.disconnect();
-  }, [phase]);
+  }, [entranceStarted]);
 
   useEffect(() => {
-    if (phase !== "opening") return;
-    const fallback = window.setTimeout(() => setPhase("open"), 6_500);
+    if (!openingActive) return;
+    const fallback = window.setTimeout(finishOpening, 6_500);
     return () => window.clearTimeout(fallback);
-  }, [phase]);
+  }, [openingActive, finishOpening]);
 
   function startInvitation() {
     if (entered.current) return;
     entered.current = true;
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     if (audio.current) audio.current.volume = 0.7;
     void audio.current?.play().catch(() => {});
-    if (reducedMotion) {
-      setPhase("open");
-      return;
-    }
     setPhase("opening");
-    void openingVideo.current?.play().catch(() => setPhase("open"));
   }
 
 
   return (
     <div className="invitation-root" data-phase={phase} data-reduced-motion={reducedMotion}>
       <audio ref={audio} src={media.music} loop preload="none" />
-      <main ref={main} id="invitation" className="invitation-content" inert={phase !== "open"} aria-label={`${invitation.couple.first} and ${invitation.couple.second} wedding invitation`}>
+      <main ref={main} id="invitation" className="invitation-content" tabIndex={-1} inert={phase !== "open"} aria-label={`${invitation.couple.first} and ${invitation.couple.second} wedding invitation`}>
         {sceneData.map((scene) => <div key={scene.id}>
           <section id={scene.id} key={scene.id} className="t-rec" aria-label={scene.label}>
             <div className="t396"><div className="t396__artboard">
-              {scene.elements.map((element) => <SceneElement key={element.id} element={element} scene={scene.id} reducedMotion={reducedMotion} active={phase === "open"} selectedVenue={selectedVenue} onSelectVenue={setSelectedVenue} />)}
+              {scene.elements.map((element) => <SceneElement key={element.id} element={element} scene={scene.id} reducedMotion={reducedMotion} active={entranceStarted} selectedVenue={selectedVenue} onSelectVenue={setSelectedVenue} />)}
             </div></div>
           </section>
         </div>)}
       </main>
-      {phase !== "open" && <button type="button" className="envelope-overlay" onClick={startInvitation} disabled={phase === "opening"} aria-label="Open your invitation">
-        <PersonalEnvelope />
-      </button>}
-      <ReferenceOpening phase={phase} videoRef={openingVideo} onReveal={() => setPhase((current) => current === "opening" ? "open" : current)} />
+      {phase !== "open" && <EnvelopeIntro phase={phase} reducedMotion={reducedMotion} onStart={startInvitation} onRevealing={beginReveal} onComplete={finishOpening} />}
 
       <noscript><div className="noscript-message">Please enable JavaScript to open this invitation.</div></noscript>
     </div>

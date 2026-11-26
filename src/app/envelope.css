@@ -1,0 +1,18 @@
+/* Matching poster/video geometry keeps the earlier opener continuous on tap. */
+.envelope-intro { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: var(--ivory); isolation: isolate; }
+.envelope-open-button { display: grid; place-items: center; width: 100%; height: 100%; margin: 0; padding: 0; border: 0; background: transparent; color: var(--burgundy); user-select: none; touch-action: manipulation; }
+.envelope-open-button:disabled { opacity: 1; cursor: default; }
+.envelope-open-button:focus-visible { outline: none; }
+.envelope-open-button:focus-visible .envelope-viewport { outline: 3px solid var(--burgundy); outline-offset: 5px; }
+.envelope-viewport { position: relative; display: block; width: min(550px,calc(100vw - 24px),calc((100svh - 20px)*.5625)); aspect-ratio: 9 / 16; overflow: hidden; background: #eee3ce url('/assets/images/burgundy-floral-theme-v1.webp') center / cover; box-shadow: 0 3px 22px #4922281a; }
+.envelope-poster, .envelope-movie { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: fill; }
+.envelope-poster { z-index: 2; }
+.envelope-movie { z-index: 1; visibility: hidden; pointer-events: none; }
+.envelope-intro[data-playing="true"] .envelope-movie { visibility: visible; }
+.envelope-intro[data-playing="true"] .envelope-poster { visibility: hidden; }
+.envelope-movie::-webkit-media-controls, .envelope-movie::-webkit-media-controls-start-playback-button { display: none !important; -webkit-appearance: none; }
+.envelope-tap-hint { position: absolute; top: 65.1%; left: 0; right: 0; z-index: 3; display: flex; flex-direction: column; align-items: center; gap: clamp(10px,2vh,18px); color: #76192f; font: 400 clamp(11px,1.5vw,14px)/1.3 var(--font-envelope),Georgia,serif; letter-spacing: .28em; text-transform: uppercase; opacity: 1; transition: opacity .2s ease; }
+.envelope-intro:not([data-envelope-phase="closed"]) .envelope-tap-hint { opacity: 0; }
+.envelope-chevron { display: block; width: 10px; height: 10px; border-top: 1px solid currentColor; border-left: 1px solid currentColor; rotate: 45deg; }
+.envelope-intro-fallback { opacity: 0; transition: opacity .4s ease; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
