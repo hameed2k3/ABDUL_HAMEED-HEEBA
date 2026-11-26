@@ -49,9 +49,9 @@ Dress code, gift information and RSVP were omitted at the user's request. The RS
 
 Six sections retain the spacious reference composition: invitation (1327px, extended from 1240px to fit the scratch date), countdown (257px / 247px on phones), timeline (570px), location (650px / 628px on phones, extended for three arched venue cards), framed map (343px) and closing (673px). The original guest-information and RSVP sections are intentionally omitted.
 
-- Ivory embossed envelope with the supplied burgundy floral artwork, complete A & H seal and accessible Tap to open button. One tap starts the earlier opening animation, now rendered with the new floral paper, and the existing music.
+- Ivory embossed envelope with the supplied burgundy floral artwork, complete A & H seal and accessible Tap to open button. One tap starts the Remotion-polished rising-envelope animation and the existing music.
 - Inside the invitation home section, below Nikah Ceremony and above the names, scratch the A & H seal to reveal Sunday, 3 January 2027. Keyboard users can focus the same seal and press Enter or Space. No scratching is required on the opening envelope.
-- The earlier 4.8-second opening motion is restored using a new finished video with the supplied burgundy floral paper throughout. Its original complete A & H seal, movement and warm light are retained. A first-frame poster matches the video. The video stays hidden until playback starts and has no visible controls. Reduced motion, failed media or interrupted playback use a short fade; a 6.5-second watchdog prevents a stuck cover.
+- The selected 4.8-second rising motion is rebuilt from clean layers in Remotion 4.0.547, with the supplied burgundy floral paper and existing complete A & H seal. The locally rendered video is 1080 × 1920 at 60fps with restrained warm light and sharper folds. A lossless first-frame poster matches the video. The video stays hidden until playback starts and has no visible controls. Reduced motion, failed media or interrupted playback use a short fade; a 6.5-second watchdog prevents a stuck cover.
 - Garden/swans motion rendered as an animated WebP, so iOS cannot show a native video play icon over it. The floating music play/pause button is removed as requested; background music still starts on opening. A static garden image is selected for reduced-motion preferences.
 - Original scroll reveals, floating florals, petals, parchment edges, ornaments and moving timeline rose.
 - Animated countdown digits, original ornate map frame and venue-selection tabs.
@@ -59,7 +59,7 @@ Six sections retain the spacious reference composition: invitation (1327px, exte
 
 No human photograph or unrelated New York venue illustration is served. Three arched venue cards fill the extended former illustration area, with Reception centered above the Nikah and Walima cards. The original reference is adapted to the user's content and exclusions; personalized text and artwork are not a literal pixel-for-pixel copy.
 
-`src/data/scenes.json` contains positioned layers and animation keyframes. `src/app/reference.css` retains responsive source layout rules; `src/app/globals.css` supplies personalized text fitting and React component styling. `src/components/EnvelopeIntro.tsx` and `src/app/envelope.css` implement the video opener; `src/app/theme.css` applies the ivory and burgundy palette. The existing seal PNG is reused unchanged. `docs/classic-opening-new-background.md` documents the restored animation and verification. `docs/reel-style-opener.md` records the superseded native-fold iteration and paper generation prompt. Earlier offline video-compositing files remain as history; raw reference footage remains in the separate original-site archive. `ASSET-SOURCES.json` records retained source URLs and checksums. The A & H artwork edit prompts are saved in `docs/envelope-artwork.txt` and `docs/seal-animation-fix.txt`.
+`src/data/scenes.json` contains positioned layers and animation keyframes. `src/app/reference.css` retains responsive source layout rules; `src/app/globals.css` supplies personalized text fitting and React component styling. `src/components/EnvelopeIntro.tsx` and `src/app/envelope.css` implement the video opener; `src/app/theme.css` applies the ivory and burgundy palette. The existing seal PNG is reused unchanged. `docs/remotion-opener.md` documents the current animation and verification; `tools/envelope-animation/README.md` explains the isolated authoring workflow. `docs/classic-opening-new-background.md` records the previous video iteration. `docs/reel-style-opener.md` records the superseded native-fold iteration and paper generation prompt. Earlier offline video-compositing files remain as history; raw reference footage remains in the separate original-site archive. `ASSET-SOURCES.json` records retained source URLs and checksums. The A & H artwork edit prompts are saved in `docs/envelope-artwork.txt` and `docs/seal-animation-fix.txt`.
 
 ## Verify
 
@@ -69,13 +69,13 @@ npm test
 npm run build
 ```
 
-See `docs/classic-opening-new-background.md` for current feature-preview checks; `docs/production-verification.json` records the earlier production release. Phone checks used 375 × 812 and 393 × 852 viewports. Checks covered the restored tap-to-open flow, scratch reveal inside home and keyboard access. The latest update verified all three event times, the reception pin, switching all three map tabs, reception-card navigation, the social preview, and mobile/desktop card spacing. Both media buttons remain absent. Desktop composition was also inspected previously.
+See `docs/remotion-opener.md` for current feature-preview checks; `docs/production-verification.json` records the earlier production release. Phone checks used 375 × 812 and 393 × 852 viewports. Checks covered the restored tap-to-open flow, scratch reveal inside home and keyboard access. The latest update verified all three event times, the reception pin, switching all three map tabs, reception-card navigation, the social preview, and mobile/desktop card spacing. Both media buttons remain absent. Desktop composition was also inspected previously.
 
 ## GitHub and Vercel production
 
 Repository: [hameed2k3/ABDUL_HAMEED-HEEBA](https://github.com/hameed2k3/ABDUL_HAMEED-HEEBA). The application is at the repository root; use **Root Directory `.`**, not an `outputs/` subdirectory.
 
-`vercel.json` selects Next.js, installs the locked dependencies with `npm ci`, and builds with `npm run build`. Node.js is pinned to 24.x. Keep the default Next.js output directory. Every push and pull request to `main` runs the GitHub Actions type check, nine unit tests, and production build on Linux.
+`vercel.json` selects Next.js, installs the locked dependencies with `npm ci`, and builds with `npm run build`. Node.js is pinned to 24.x. Keep the default Next.js output directory. Every push and pull request to `main` runs the GitHub Actions application type check, nine unit tests and production build on Linux, plus a separate type check for the isolated Remotion project. Remotion rendering is a local authoring step and is excluded from the Vercel build.
 
 To connect the existing repository in the Vercel dashboard:
 

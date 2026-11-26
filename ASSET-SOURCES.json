@@ -179,5 +179,15 @@
     "source_url": "First decoded frame of envelope-opening-burgundy-v3.mp4; matched cover for continuous playback",
     "local_path": "assets/images/envelope-poster-burgundy-v3.jpg",
     "sha256": "f665267a2a4928d5cdc1c8c256836227a326d4bad696f769e28eb608c1fdb45b"
+  },
+  {
+    "source_url": "Remotion 4.0.547 layered composition; tools/envelope-animation. H.264 1080x1920 60fps 288 frames CRF20 BT.709 faststart, no audio.",
+    "local_path": "assets/media/envelope-opening-remotion-v4.mp4",
+    "sha256": "ce0fc1685706ea71fa84b30826c1866a9717a86fd121993deaf23716646d6cef"
+  },
+  {
+    "source_url": "Lossless RGB WebP from the first encoded Remotion v4 video frame; tools/envelope-animation/render.mjs",
+    "local_path": "assets/images/envelope-poster-remotion-v4.webp",
+    "sha256": "d49e631f3b1f8b626fea4e48c494213d551a50849eeae419156a0160ed2c9fbf"
   }
 ]

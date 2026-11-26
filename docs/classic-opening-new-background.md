@@ -1,5 +1,7 @@
 # Earlier opening animation with the new background
 
+Historical iteration: superseded by the Remotion-polished rising opener. See `remotion-opener.md` for the current implementation.
+
 On 26 November 2026 the user requested the earlier opening animation with their new ivory embossed/burgundy floral background. This supersedes the native 3D fold on the same feature branch, `feat/reel-style-opener`.
 
 The new background is rendered into the moving envelope itself. It is present in the cover, moving flap and open-envelope frames. The earlier 4.8-second timing, rising A & H seal and warm light are preserved; the native 180-degree flip is no longer mounted.

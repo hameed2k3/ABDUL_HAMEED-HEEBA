@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 
 export type InvitationPhase = "closed" | "opening" | "revealing" | "open";
 
-const MOVIE = "/assets/media/envelope-opening-burgundy-v3.mp4";
-const POSTER = "/assets/images/envelope-poster-burgundy-v3.jpg";
+const MOVIE = "/assets/media/envelope-opening-remotion-v4.mp4";
+const POSTER = "/assets/images/envelope-poster-remotion-v4.webp";
 
 type Props = {
   phase: InvitationPhase;
@@ -15,7 +15,7 @@ type Props = {
   onComplete: () => void;
 };
 
-/** The earlier opening motion, rendered with the new paper in the video itself. */
+/** Remotion-polished rising motion, rendered locally with the supplied artwork. */
 export function EnvelopeIntro({ phase, reducedMotion, onStart, onRevealing, onComplete }: Props) {
   const root = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
@@ -98,8 +98,8 @@ export function EnvelopeIntro({ phase, reducedMotion, onStart, onRevealing, onCo
   return <div ref={root} className="envelope-intro" data-envelope-phase={phase} data-playing={playing}>
     <button type="button" className="envelope-open-button" onClick={open} disabled={phase !== "closed"} aria-label="Open Abdul Hameed and Heeba’s wedding invitation">
       <span className="envelope-viewport" aria-hidden="true">
-        <img className="envelope-poster" src={POSTER} width={720} height={1280} alt="" fetchPriority="high" />
-        <video ref={video} className="envelope-movie" src={MOVIE} poster={POSTER} width={720} height={1280}
+        <img className="envelope-poster" src={POSTER} width={1080} height={1920} alt="" fetchPriority="high" />
+        <video ref={video} className="envelope-movie" src={MOVIE} poster={POSTER} width={1080} height={1920}
           preload="auto" muted playsInline disablePictureInPicture disableRemotePlayback
           controlsList="nodownload nofullscreen noremoteplayback"
           onPlaying={() => setPlaying(true)}
