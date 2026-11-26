@@ -1,13 +1,15 @@
 :root {
-  --ivory: #f9f0e0;
+  --ivory: #f5eddd;
+  --accent: #7b1730;
+  --accent-soft: #d6b8b5;
   --gold: #a67d2b;
-  --burgundy: #5a0f1b;
-  --ink: #6c513f;
+  --burgundy: #6b1025;
+  --ink: #5a3537;
   --font-body: var(--font-reference);
 }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; background: var(--ivory); }
+html { scrollbar-gutter: stable both-edges; scroll-behavior: smooth; background: var(--ivory); }
 body.t-body { margin: 0; background: var(--ivory); color: var(--ink); --t-text-font: var(--font-reference); --t-headline-font: var(--font-reference); }
 button, input { font: inherit; }
 button { -webkit-tap-highlight-color: transparent; }
@@ -38,12 +40,6 @@ button { cursor: pointer; }
 #rec4227041103 .tn-elem[data-elem-id="176340390975774690"] { top: 371px; }
 #rec4227041103 .tn-elem[data-elem-id="176340390975774690"] .tn-atom { font-size: 30px; }
 
-/* Match the supplied envelope screenshot with the original embossed artwork. */
-.reference-envelope { position: relative; display: block; width: min(calc(100% - 32px),550px); height: min(calc(100dvh - 20px),875px); overflow: hidden; background: #f0e8dc; }
-.reference-envelope-artwork { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; }
-.reference-tap-hint { position: absolute; top: 65.1%; left: 50%; translate: -50% 0; display: flex; flex-direction: column; align-items: center; gap: 17px; color: #ac8a68; font: 400 12px/1 var(--font-envelope),Georgia,serif; letter-spacing: .28em; text-transform: uppercase; white-space: nowrap; }
-.reference-chevron { display: block; width: 12px; height: 12px; border-top: 1px solid #b29678; border-left: 1px solid #b29678; rotate: 45deg; }
-
 /* The envelope keeps tap-to-open; scratching belongs to the invitation hero. */
 .home-date-reveal { display: flex; flex-direction: column; align-items: center; width: 100%; }
 .home-scratch-seal { display: block; position: relative; width: 112px; aspect-ratio: 1; padding: 0; border: 0; border-radius: 50%; background: transparent; opacity: 0; }
@@ -72,10 +68,6 @@ button { cursor: pointer; }
 @media (max-width: 479px) {
   #rec4227041103 .tn-elem[data-elem-id="1779527203760000001"] { height: 564px; }
 }
-
-.reference-opening-frame { position: relative; width: min(calc(100% - 32px),550px); height: min(calc(100dvh - 20px),875px); overflow: hidden; }
-.reference-opening .reference-opening-frame video { display: block; width: 100%; height: 100%; max-width: none; object-fit: cover; }
-.reference-opening.is-exiting { opacity: 0; visibility: hidden; pointer-events: none; transition: opacity .8s ease, visibility 0s .8s; }
 
 /* Original spacious timeline, ornaments, map frame and full closing composition. */
 #rec2487446103 .tn-elem[data-elem-type="event-time"] { left: calc(50% - 169px); width: 143px; }
@@ -112,22 +104,13 @@ button { cursor: pointer; }
 .reference-family-caption { display: block; font: 100 17px/1.5 var(--font-invitation),serif; margin-top: 12px; }
 #rec2487446253 .tn-elem[data-elem-id="1772813849329000001"] .tn-atom { font-size: 25px; }
 
-.envelope-overlay, .opening-overlay { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: var(--ivory); }
-.envelope-overlay { z-index: 100; width: 100%; height: 100dvh; border: 0; padding: 0; user-select: none; }
-.envelope-image { display: block; width: 100%; max-width: 440px; object-fit: contain; }
-.tap-to-open { position: absolute; bottom: 30%; left: 50%; transform: translateX(-50%); color: rgba(140,100,60,.75); font: 11px Georgia,serif; letter-spacing: .26em; text-transform: uppercase; white-space: nowrap; animation: tap-pulse 2.4s ease-in-out infinite; }
-.opening-overlay { z-index: 101; opacity: 0; pointer-events: none; visibility: hidden; transition: opacity 1.4s ease, visibility 1.4s; }
-.opening-overlay.is-opening { opacity: 1; visibility: visible; pointer-events: auto; transition: none; }
-.opening-overlay video { display: block; width: 100%; max-width: 440px; object-fit: contain; }
-.skip-opening { position: absolute; bottom: max(20px,env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); border: 1px solid #c7b398; border-radius: 20px; padding: 9px 18px; color: #76583e; background: #f9f0e0ed; font: 14px var(--font-body),sans-serif; }
-
 .reveal { opacity: 1; }
-[data-phase="open"] .reveal { opacity: 0; transform: translateY(22px); transition: opacity var(--reveal-duration,1s) ease var(--reveal-delay,0s), transform var(--reveal-duration,1s) cubic-bezier(.2,.65,.3,1) var(--reveal-delay,0s); }
-[data-phase="open"] .reveal-fadein { transform: none; }
-[data-phase="open"] .reveal-fadeinleft { transform: translateX(22px); }
-[data-phase="open"] .reveal-fadeinright { transform: translateX(-22px); }
-[data-phase="open"] .reveal-zoomin { transform: scale(.94); }
-[data-phase="open"] .reveal.is-visible { opacity: 1; transform: none; }
+:is([data-phase="revealing"],[data-phase="open"]) .reveal { opacity: 0; transform: translateY(22px); transition: opacity var(--reveal-duration,1s) ease var(--reveal-delay,0s), transform var(--reveal-duration,1s) cubic-bezier(.2,.65,.3,1) var(--reveal-delay,0s); }
+:is([data-phase="revealing"],[data-phase="open"]) .reveal-fadein { transform: none; }
+:is([data-phase="revealing"],[data-phase="open"]) .reveal-fadeinleft { transform: translateX(22px); }
+:is([data-phase="revealing"],[data-phase="open"]) .reveal-fadeinright { transform: translateX(-22px); }
+:is([data-phase="revealing"],[data-phase="open"]) .reveal-zoomin { transform: scale(.94); }
+:is([data-phase="revealing"],[data-phase="open"]) .reveal.is-visible { opacity: 1; transform: none; }
 
 .countdown { display: flex; justify-content: center; align-items: center; gap: 6px; margin: 80px 20px; font-family: var(--font-invitation),serif; font-weight: 600; color: #b48c3d; }
 .countdown-block { text-align: center; }
@@ -195,5 +178,5 @@ button { cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
-  [data-phase="open"] .reveal { opacity: 1; transform: none; }
+  :is([data-phase="revealing"],[data-phase="open"]) .reveal { opacity: 1; transform: none; }
 }

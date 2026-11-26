@@ -1,0 +1,34 @@
+/* One fixed design space keeps paper edges, hinge and seal aligned on every screen. */
+.envelope-intro { position: fixed; inset: 0; z-index: 100; display: grid; place-items: center; background: var(--ivory); isolation: isolate; }
+.envelope-open-button { display: grid; place-items: center; width: 100%; height: 100%; margin: 0; padding: 0; border: 0; background: transparent; color: var(--burgundy); user-select: none; touch-action: manipulation; }
+.envelope-open-button:disabled { opacity: 1; cursor: default; }
+.envelope-open-button:focus-visible { outline: none; }
+.envelope-open-button:focus-visible .envelope-viewport { outline: 3px solid var(--burgundy); outline-offset: 5px; }
+.envelope-viewport { position: relative; display: block; width: min(550px,calc(100vw - 24px),calc((100svh - 20px)*.5625)); aspect-ratio: 9 / 16; overflow: hidden; background: #eee3ce; box-shadow: 0 3px 22px #4922281a; }
+.envelope-stage { --envelope-scale: .5; position: absolute; display: block; width: 720px; height: 1280px; left: 0; top: 0; transform: scale(var(--envelope-scale)); transform-origin: 0 0; perspective: 1800px; perspective-origin: 50% 30%; background: #eee3ce; }
+.envelope-paper-base { position: absolute; inset: 0; display: block; width: 720px; height: 1280px; object-fit: fill; }
+.envelope-lining { position: absolute; left: 0; top: 384px; width: 720px; height: 322px; clip-path: polygon(0 0,100% 0,50% 100%); background: linear-gradient(180deg,#a78c6c55,#fff2d842),url('/assets/images/ivory-floral-paper-v3.webp') center 48% / 720px 1280px; box-shadow: inset 0 8px 20px #4c2e3529; }
+.envelope-flap-shadow { position: absolute; left: -7px; top: 384px; width: 734px; height: 336px; clip-path: polygon(0 0,100% 0,50% 100%); transform-origin: 50% 0; background: #51382c; opacity: .65; filter: blur(9px); }
+.envelope-flap { position: absolute; left: 0; top: 384px; width: 720px; height: 320px; z-index: 4; transform-origin: 50% 0; transform-style: preserve-3d; will-change: transform; }
+/* Do not clip, filter, or fade the flap assembly: these flatten its 3D children. */
+.envelope-flap-front, .envelope-flap-back { position: absolute; inset: 0; display: block; backface-visibility: hidden; -webkit-backface-visibility: hidden; transform-style: preserve-3d; }
+.envelope-flap-front { transform: translateZ(1px); }
+.envelope-flap-back { transform: rotateY(180deg) translateZ(1px); }
+.envelope-flap-paper { position: absolute; inset: 0; display: block; clip-path: polygon(0 0,100% 0,50% 100%); background: linear-gradient(155deg,#ffffff12,#94775b15),url('/assets/images/burgundy-floral-theme-v1.webp') 0 -384px / 720px 1280px; }
+.envelope-flap-back .envelope-flap-paper { background: linear-gradient(180deg,#f5eddf18,#a38b6a38),url('/assets/images/ivory-floral-paper-v3.webp') 0 -384px / 720px 1280px; }
+.envelope-wax { position: absolute; left: 225px; top: 181px; width: 270px; height: auto; display: block; transform: translateZ(2px); filter: drop-shadow(0 9px 6px #3e171a55); backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+.envelope-seal-fallback { position: absolute; left: 250px; top: 206px; width: 220px; height: 220px; display: grid; place-items: center; border: 8px double #ad6570; border-radius: 48% 44% 47% 43%; background: var(--burgundy); color: #dbbb75; font: 55px var(--font-invitation),serif; }
+.envelope-pocket { position: absolute; inset: 0; z-index: 3; display: block; clip-path: polygon(0 30%,50% 55%,100% 30%,100% 100%,0 100%); background: url('/assets/images/burgundy-floral-theme-v1.webp') 0 0 / 720px 1280px; }
+.envelope-pocket-left, .envelope-pocket-right, .envelope-pocket-bottom { position: absolute; inset: 0; display: block; }
+.envelope-pocket-left { clip-path: polygon(0 30%,50% 55%,0 100%); background: linear-gradient(145deg,#fff7e80d,#4e223016); }
+.envelope-pocket-right { clip-path: polygon(100% 30%,50% 55%,100% 100%); background: linear-gradient(215deg,#fff7e80d,#4e223016); }
+.envelope-pocket-bottom { clip-path: polygon(50% 55%,100% 100%,0 100%); background: linear-gradient(180deg,#fff8e51a,transparent); }
+.envelope-light { position: absolute; z-index: 2; left: 30px; top: -100px; width: 660px; height: 804px; opacity: 0; transform-origin: 50% 100%; background: conic-gradient(from 330deg at 50% 100%,transparent 0deg,#fff6ca55 8deg,transparent 15deg,#fff8d7bd 25deg,#fffef0ed 30deg,#fff8d7bd 35deg,transparent 45deg,#fff6ca55 52deg,transparent 60deg); mask-image: linear-gradient(transparent,#000 65%); -webkit-mask-image: linear-gradient(transparent,#000 65%); }
+.envelope-bloom { position: absolute; z-index: 5; left: 125px; top: 445px; width: 470px; height: 470px; opacity: 0; pointer-events: none; background: radial-gradient(ellipse,#fffef7eb 0%,#fff5c899 20%,#ffe5a338 45%,transparent 70%); }
+.envelope-sparkles { position: absolute; inset: 0; display: block; z-index: 6; pointer-events: none; }
+.envelope-sparkle { position: absolute; display: block; opacity: 0; border-radius: 50%; background: #fffdf3; box-shadow: 0 0 9px 3px #f9d98eaa; }
+.envelope-sparkle:nth-child(3n) { border-radius: 0; clip-path: polygon(50% 0,60% 39%,100% 50%,60% 61%,50% 100%,40% 61%,0 50%,40% 39%); }
+.envelope-tap-hint { position: absolute; top: 862px; left: 0; right: 0; z-index: 7; display: flex; flex-direction: column; align-items: center; gap: 26px; color: #76192f; font: 400 max(18px,calc(11px / var(--envelope-scale)))/1.3 var(--font-envelope),Georgia,serif; letter-spacing: .28em; text-transform: uppercase; }
+.envelope-chevron { display: block; width: max(16px,calc(8px / var(--envelope-scale))); height: max(16px,calc(8px / var(--envelope-scale))); border-top: 1px solid currentColor; border-left: 1px solid currentColor; rotate: 45deg; }
+.envelope-intro-fallback { opacity: 0; transition: opacity .4s ease; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }

@@ -157,5 +157,17 @@
     "source_url": "First frame of local reference swans/garden footage, used for reduced motion",
     "local_path": "assets/images/garden-still-v2.jpg",
     "sha256": "a362120741f20e8a4632b29cb20bb9c9cd53c9e0f4b6244cae036ea2833e3cff"
+  },
+  {
+    "source_url": "Built-in image-generation edit: clean ivory embossed paper without seal, text or folds. Prompt: docs/reel-style-opener.md",
+    "local_path": "assets/images/ivory-floral-paper-v3.webp",
+    "sha256": "874a1fdacb9eab39ebab4cd37a3386d2ba130965aad9f03d14f84319fdfca480",
+    "original_artwork": "docs/artwork/ivory-floral-paper-v3.png"
+  },
+  {
+    "source_url": "User-supplied ivory embossed paper and burgundy floral artwork, 26 November 2026. Optimized with FFmpeg libwebp quality 92.",
+    "local_path": "assets/images/burgundy-floral-theme-v1.webp",
+    "sha256": "87def1ba98fdd9ffbc998d643200a903b2cd178ad985b42272475f9c34741f79",
+    "original_artwork": "docs/artwork/burgundy-floral-theme-v1.png"
   }
 ]
